@@ -1,0 +1,8 @@
+{
+  "name": "DSC India",
+  "description": "Buy Digital Signature Certificate (DSC) Online with DSC India. Fast, paperless Class 3, DGFT, and Foreign/NRI DSC issuance within 30 minutes with PAN India support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
