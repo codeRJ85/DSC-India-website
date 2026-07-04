@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Star, Check, X as CloseIcon, ShieldCheck, Zap, Award, BookOpen, Clock, Play, Phone, HelpCircle } from 'lucide-react';
+import { Star, Check, X as CloseIcon, ShieldCheck, Zap, Award, BookOpen, Clock, Phone, HelpCircle } from 'lucide-react';
 import { Product, CartItem } from '../types';
 import { products, comparisonFeatures } from '../data';
 
@@ -17,9 +17,6 @@ export default function HomeView({ onAddToCart, onOpenEnquiry, setActiveTab }: H
 
   // Tabs state inside "Why We? / About Us / DSC Uses" section
   const [activeInfoTab, setActiveInfoTab] = useState<'why' | 'about' | 'uses'>('why');
-
-  // Video playing simulation
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   // Accordion FAQ state
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -621,7 +618,7 @@ export default function HomeView({ onAddToCart, onOpenEnquiry, setActiveTab }: H
             {activeInfoTab === 'why' && (
               <>
                 {/* Left badges column */}
-                <div className="lg:col-span-4 space-y-4">
+                <div className="lg:col-span-6 space-y-4">
                   <h3 className="text-xl font-bold font-display text-blue-950 mb-3 border-b border-slate-100 pb-2">Our Key Highlights</h3>
                   <div className="flex flex-wrap gap-2.5">
                     {badgesWhyWe.map((b, i) => (
@@ -643,57 +640,8 @@ export default function HomeView({ onAddToCart, onOpenEnquiry, setActiveTab }: H
                   </button>
                 </div>
 
-                {/* Center Office Video Tour Column */}
-                <div className="lg:col-span-4">
-                  <h3 className="text-sm font-bold font-display text-slate-450 uppercase tracking-widest text-center mb-3">Our Office Tour Video</h3>
-                  <div className="relative rounded-2xl overflow-hidden shadow-md group border border-slate-200 aspect-video lg:aspect-square flex items-center justify-center bg-slate-950">
-                    {!isVideoPlaying ? (
-                      <>
-                        {/* Custom visual thumbnail block */}
-                        <div className="absolute inset-0 bg-slate-900 flex flex-col justify-between p-4 z-10 select-none">
-                          <span className="self-start bg-blue-600 text-white font-mono text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
-                            SECURE OFFICE
-                          </span>
-                          <div className="text-center py-4">
-                            <h4 className="text-white font-display font-extrabold text-md tracking-tight">e-Solutions / DSC India</h4>
-                            <p className="text-[10px] text-slate-400 mt-1">Digital Security Center - New Delhi</p>
-                          </div>
-                          <span className="text-[9px] text-slate-500 font-mono text-center">Ph: +91 8287572721</span>
-                        </div>
-                        
-                        {/* Play overlay button */}
-                        <button
-                          onClick={() => setIsVideoPlaying(true)}
-                          className="absolute z-20 h-14 w-14 bg-blue-700 hover:bg-blue-800 text-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-all cursor-pointer"
-                        >
-                          <Play className="w-6 h-6 fill-current pl-0.5" />
-                        </button>
-                      </>
-                    ) : (
-                      <div className="absolute inset-0 bg-slate-900 p-5 text-white flex flex-col justify-between">
-                        <div className="flex justify-between items-center border-b border-white/10 pb-2">
-                          <span className="text-xs text-sky-400 font-bold font-mono uppercase">Streaming Office Overview</span>
-                          <button 
-                            onClick={() => setIsVideoPlaying(false)}
-                            className="text-white/60 hover:text-white"
-                          >
-                            Close
-                          </button>
-                        </div>
-                        <div className="text-center py-6 space-y-3">
-                          <div className="w-12 h-12 rounded-full border-4 border-t-blue-500 border-r-transparent border-slate-700 animate-spin mx-auto"></div>
-                          <p className="text-xs text-slate-350 leading-relaxed max-w-xs mx-auto">Connecting to secure camera feeds of our physical enrollment store in Shakarpur, New Delhi...</p>
-                        </div>
-                        <div className="text-[9px] text-slate-500 font-mono text-center pt-2">
-                          DSC Enrollment Server 10.3.1.250 - Status Live
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-
                 {/* Right text Column */}
-                <div className="lg:col-span-4 space-y-4">
+                <div className="lg:col-span-6 space-y-4">
                   <div className="inline-flex items-center space-x-1.5 bg-emerald-50 text-emerald-800 border border-emerald-150 px-2.5 py-0.5 rounded text-[11px] font-bold">
                     <span>Over 1 Million DSC Sold!</span>
                   </div>

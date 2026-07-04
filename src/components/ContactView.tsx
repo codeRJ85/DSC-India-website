@@ -61,7 +61,7 @@ Message: ${message}`;
                 <div>
                   <h4 className="font-display font-bold text-sm text-slate-900">Headquarters Location</h4>
                   <p className="mt-1 leading-relaxed">
-                    DSC India Security Center, 207, 1st Floor, Vikas Complex, 37, V.S. Block, Shakarpur, New Delhi, Delhi 110092
+                    Delhi - 110092
                   </p>
                 </div>
               </li>

@@ -124,7 +124,7 @@ export default function Footer({ setActiveTab, onOpenEnquiry }: FooterProps) {
             <li className="flex items-start space-x-2.5">
               <MapPin className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
               <span>
-                DSC India Security Center, 207, 1st Floor, Vikas Complex, 37, V.S. Block, Shakarpur, New Delhi, Delhi 110092
+                Delhi - 110092
               </span>
             </li>
             <li className="flex items-center space-x-2.5">
