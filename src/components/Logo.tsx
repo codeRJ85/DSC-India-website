@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/nlogo.png";
+
 interface LogoProps {
   className?: string;
 }
@@ -7,7 +7,7 @@ interface LogoProps {
 export default function Logo({ className = "h-11 w-auto" }: LogoProps) {
   return (
     <img
-      src={logo}
+      src="/nlogo.png"
       alt="DSC India"
       className={className}
     />
