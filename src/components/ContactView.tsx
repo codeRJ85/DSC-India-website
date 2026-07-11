@@ -72,8 +72,10 @@ Message: ${message}`;
                 </div>
                 <div>
                   <h4 className="font-display font-bold text-sm text-slate-900">Phone Hotlines</h4>
-                  <p className="mt-1 font-bold text-blue-900 text-sm font-sans">+91 8287572721</p>
-                  <p className="text-[10px] text-slate-400 mt-0.5">Corporate landline: 011-43082971</p>
+                  <div className="space-y-1 mt-1">
+                    <p className="font-bold text-blue-900 text-sm font-sans">+91 8287572721</p>
+                    <p className="font-bold text-blue-900 text-sm font-sans">+91 8588072606</p>
+                  </div>
                 </div>
               </li>
 

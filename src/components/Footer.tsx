@@ -127,9 +127,12 @@ export default function Footer({ setActiveTab, onOpenEnquiry }: FooterProps) {
                 Delhi - 110092
               </span>
             </li>
-            <li className="flex items-center space-x-2.5">
-              <Phone className="w-4 h-4 text-sky-400 shrink-0" />
-              <span>+91 8287572721</span>
+            <li className="flex items-start space-x-2.5">
+              <Phone className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
+              <div className="flex flex-col">
+                <span>+91 8287572721</span>
+                <span>+91 8588072606</span>
+              </div>
             </li>
             <li className="flex items-center space-x-2.5">
               <Mail className="w-4 h-4 text-sky-400 shrink-0" />

@@ -112,7 +112,10 @@ export default function Header({
             </div>
             <div className="hidden lg:block text-left select-none">
               <span className="text-[10px] font-semibold text-slate-400 block -mb-1">Call Support (24/7)</span>
-              <span className="font-display font-extrabold text-blue-900 tracking-tight text-md">+91 8287572721</span>
+              <div className="flex flex-col">
+                <span className="font-display font-extrabold text-blue-900 tracking-tight text-xs">+91 8287572721</span>
+                <span className="font-display font-extrabold text-blue-900 tracking-tight text-xs">+91 8588072606</span>
+              </div>
             </div>
           </a>
 

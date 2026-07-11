@@ -190,7 +190,10 @@ Message: ${message}`;
                 <p className="font-semibold text-blue-900 text-center mb-1 flex items-center justify-center">
                   <Phone className="w-3.5 h-3.5 mr-1" /> Call support directly for instant issuance:
                 </p>
-                <p className="text-center text-sm font-bold text-blue-800">+91 8287572721</p>
+                <div className="flex flex-col items-center justify-center space-y-1">
+                  <p className="text-center text-sm font-bold text-blue-800">+91 8287572721</p>
+                  <p className="text-center text-sm font-bold text-blue-800">+91 8588072606</p>
+                </div>
               </div>
               <button
                 onClick={handleReset}

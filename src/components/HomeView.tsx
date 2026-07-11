@@ -196,7 +196,10 @@ export default function HomeView({ onAddToCart, onOpenEnquiry, setActiveTab }: H
 
                 <div className="bg-blue-900/50 p-4 rounded-xl border border-blue-800/80 text-center">
                   <p className="text-xs text-blue-200">Need help? Speak with our live support</p>
-                  <a href="tel:+918287572721" className="text-lg font-extrabold font-display text-white block mt-0.5">+91 8287572721</a>
+                  <div className="mt-1 space-y-1">
+                    <a href="tel:+918287572721" className="text-lg font-extrabold font-display text-white block hover:text-blue-200 transition-colors">+91 8287572721</a>
+                    <a href="tel:+918588072606" className="text-lg font-extrabold font-display text-white block hover:text-blue-200 transition-colors">+91 8588072606</a>
+                  </div>
                 </div>
               </div>
             </div>
